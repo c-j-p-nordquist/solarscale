@@ -1,0 +1,7 @@
+# Cloudflare static-asset headers. Vite fingerprints everything under /assets, so it can be cached
+# forever; the page itself is revalidated so a new deploy is picked up at once.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate

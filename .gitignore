@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.env
+.DS_Store
+*.local
+
+# Tool caches
+.vite/
+*.tsbuildinfo
+*.log
+
+# Wrangler local state
+.wrangler/
